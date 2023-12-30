@@ -17,7 +17,7 @@ services:
     image: kseen/yaterochka-nginx:latest
     container_name: yaterochka-nginx
     ports:
-      - '80:80'
-      - '443:443'
+      - '80:80'    # HTTP port
+      - '443:443'  # HTTPS port
     restart: unless-stopped
 ```
